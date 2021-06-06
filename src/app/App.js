@@ -7,6 +7,7 @@ import {
 }                          from "react-router-dom"
 import ParserExercise      from "../parser_exercise/ParserExercise"
 import ProgressBarExercise from "../progress_bar_exercise/ProgressBarExercise"
+import 'semantic-ui-css/semantic.min.css'
 
 import "./App.scss"
 
