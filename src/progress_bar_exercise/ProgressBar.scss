@@ -1,18 +1,10 @@
-// .progress-bar {
-//     width: 90%;
-//     height: 6px;
-//     background-color: #e0e0e0;
-//     background: linear-gradient(90deg, ($sunrise) 0%, ($sunset) 50%, ($red) 100%);
-//     border-radius: 8px;
-//   }
+.button-style {
+  background-color: $dark-green;
+  padding: 8px;
+  color: white;
+  font-weight: 600;
+  outline: solid 2px #0c905e;
+  transition: outline 0.3s linear;
+}
   
-  .button-style {
-    background-color: $dark-green;
-    padding: 8px;
-    color: white;
-    font-weight: 600;
-    outline: solid 2px #0c905e;
-    transition: outline 0.3s linear;
-  }
-  
-  .button-border:hover { outline-width: 3px; };
+.button-border:hover { outline-width: 3px; };
