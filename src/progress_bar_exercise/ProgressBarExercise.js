@@ -12,18 +12,22 @@ const ProgressBarExercise = () => {
     </div>
   );
 };
-
-export default ProgressBarExercise;
-
 // ----------------------------------------------------------------------------------
 const Solution = () => {
   const [count, setCount] = useState(1)
   const [buttonStatus, setButtonStatus] = useState(false)
-
+  
   const toggleExpand = () => {
     setCount(1);
     setButtonStatus(!buttonStatus ? "...Loading" : "Start Request");
   };
+
+  const loadingColor = {
+    background: "linear-gradient(90deg, rgba(255,206,63,1) 0%, rgba(255,130,0,1) 50%, rgba(255,0,0,1) 100%)",
+    borderRadius: "8px",
+    padding: "10px",
+    width: count + "%"
+  }
 
   useEffect(() => {
     if(count < 90) {
@@ -31,14 +35,20 @@ const Solution = () => {
       return () => clearInterval(interval)
     }
   }, [count])
-
+  
   return (
-    <div>
-      <div>
-        <span className='progress-bar'>{count.toFixed(0)}%</span>
+    <div className="progress">
+      <div style={loadingColor}>
+        <span>{count.toFixed(0)}%</span>
       </div>
       <br/>
-      <button className="button-border" onClick={() => toggleExpand()}>{`${buttonStatus ? "...Loading" : "Start Request"}`}</button>
+      <button 
+        className="button-style" 
+        data-testid="send-request" 
+        onClick={() => toggleExpand()}>{`${buttonStatus ? "...Loading" : "Start Request"}`}
+      </button>
     </div>
   )
 }
+
+export default ProgressBarExercise;
