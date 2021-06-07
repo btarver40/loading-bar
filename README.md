@@ -31,3 +31,17 @@ These coding exercises are meant to help Spiff gain insight into how you would t
 - If you run out of time, please add a few quick comments explaining what you would have done if you had more time. The same is true if instructions were unclear or if you have any other thoughts
 
 Thank you for taking the time to complete this coding assessment! Don't stress too much about any one thing, we evaluate the exercises holistically.
+
+
+
+
+**Bianca Hale - What I would have done with more time**
+
+- Definitely create a new branch so I am not working on master(insert hand on face emoji)
+- On hover was working at one point but now it is not so I would fix that
+- Fix button to change back to 'Start Request' after loading is complete
+- Add a red "Finish Request" button to the canvas area that completes the fake request
+- Add more tests for the component
+- Fix CSS issues I was having with the loading bar gradient and button
+- Work on more of the animation features of the loading bar
+- Begin v2 section
